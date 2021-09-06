@@ -1,0 +1,279 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body{
+    background-color: var(--grisClaro);
+}
+
+div.topHeader{
+    padding: 5%;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--amarillo);
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    display: inline-block;
+}
+
+
+.submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+    display: inline-block;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: var(--azul);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 20px 10px 0px 10px;
+    width: 40px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+.headerTitle {
+    font-size: 12px;
+    text-align: center;
+}
+
+.mainTitle {
+    font-size: 24px;
+    color: var(--grisOscuro);
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+    display: none;
+    margin-top: 20px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: white;
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+
+.mainArticle i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.mainArticle div{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.discount{
+    color: var(--verde);
+}
+
+.footerSection {
+    text-align: center;
+}
+
+.footerIcon {
+    color: var(--celeste);
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.price,
+.discount{
+    display: flex;
+}
+
+.price{
+    width: 30%;
+}
+
+.discount{
+    width: 69%;
+}
+
+.topHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 45%;
+}
+
+.form{
+    width: 45%;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: auto;
+    }
+
+    .products article{
+        width: 40vw;
+    }
+  
+    .topHeader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 50vh;
+    }
+
+    .form{
+        width: 50vh;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px){
+    main section article .description{
+        display: block;
+    }
+
+    .topHeader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article{
+        width: 20vw;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
