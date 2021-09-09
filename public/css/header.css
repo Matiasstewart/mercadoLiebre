@@ -1,0 +1,137 @@
+.mainHeader {
+    background-color: var(--amarillo);
+    padding: 3%;
+}
+
+.mainHeaderTopBar {
+    border: solid red 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+}
+
+.logo{
+    width: 25vw;
+}
+
+.searchBar {
+   background-color: var(--grisClaro);
+   margin-top: 1%;
+   margin-right: 1%;
+   justify-content: start;
+}
+
+.searchText {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.searchButton{
+    background-color: var(--grisClaro);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.copyHeader{
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    font-size: 1em;
+}
+
+.burgerButton {
+    background-color: var(--azul);
+    color: #fff;
+    display: block;
+    max-width: 13vw;
+    padding: 2vh 0px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.mainNavBar{
+    display: none;
+}
+
+.mainNavBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainNavBar a{
+    text-decoration: none;
+    color: var(--grisOscuro);
+    display: inline-block;
+    padding: 1% 0;
+    font-size: 17px;
+}
+
+@media (min-width: 361px){
+.searchBar {
+    background-color: transparent;
+}
+
+}
+
+@media (min-width: 768px){
+    .mainHeaderTopBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyHeader {
+        max-width: 45vw;
+        text-align: end;
+    }
+
+    .burgerButton{
+        display: none;
+    }
+
+    .mainNavBar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1vh;
+    }
+
+    .mainNavBar ul {
+        display: flex;
+    }
+
+    .mainNavBar li {
+        margin: 0 8px;
+    }
+}
+
+@media (min-width: 1200px){
+    .mainHeaderTopBar, .mainNavBar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .mainHeaderTopBar {
+        align-items: center;
+    }
+
+    .copyHeader {
+        max-width: none;
+    }
+
+    .mainNavBar {
+        margin-top: 1vh;
+    }
+
+    .mainNavBar li {
+        margin: 0 10px;
+    }
+
+    .mainNavBar a{
+        font-size: 19px;
+    }
+}

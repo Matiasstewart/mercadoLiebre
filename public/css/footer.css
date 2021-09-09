@@ -1,0 +1,17 @@
+.footerSection {
+    text-align: center;
+}
+
+.footerIcon {
+    color: var(--celeste);
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+footer{
+    background-color: var(--grisClaro);
+}
+
+.footerSection .copyright{
+    
+}

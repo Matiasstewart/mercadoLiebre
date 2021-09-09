@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/stylesRegister.css">
+    <link rel="stylesheet" href="/css/stylesLogin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -37,72 +37,23 @@
             </ul>
             <ul class="rightNavBar">
                 <li><a href="./register">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
-                <li><a href="./login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="./login.html">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav> 
     </header>
     <main>
         <form action="/" class="form">
-            <h2>Registrate</h2>
-            <div class="formDiv">
-                <!-- <label>Nombre y Apellido</label> -->
-                <input type="text" name="nombre" class="formInput" placeholder="Nombre y Apellido" required>
-            </div>
             <div class="formDiv">
                 <!-- <label>Nombre de usuario</label> -->
                 <input type="text" name="nombreDeUsuario" class="formInput" placeholder="Nombre de usuario" required>
             </div>
             <div class="formDiv">
-                <label>Fecha de nacimiento</label>
-                <input type="date" name="nacimiento" class="formInput" required>
-            </div>
-            <div class="formDiv">
-                <!-- <label>Domicilio</label> -->
-                <input type="text" name="direccion" class="formInput" placeholder="Domicilio">
-            </div>
-            <div class="formDiv">
-                <label>Perfil de usuario</label>
-                <label class="option">
-                    <input type="radio" name="perfil" value="comprador" class="text" required>Comprador
-                </label>
-                <label class="option">
-                    <input type="radio" name="perfil" value="vendedor" class="text" required>Vendedor
-                </label>    
-            </div>
-            <div class="formDiv">
-                <label>Categorias de interes</label>
-                <label class="optionCheckbox">
-                    <input type="checkbox" name="categorias" value="electro" class="text">Electro
-                </label>
-                <label class="optionCheckbox">
-                    <input type="checkbox" name="categorias" value="moda" class="text">Moda
-                </label>
-                <label class="optionCheckbox">
-                    <input type="checkbox" name="categorias" value="hogar" class="text">Hogar
-                </label>
-                <label class="optionCheckbox">
-                    <input type="checkbox" name="categorias" value="jugueteria" class="text">Jugueteria
-                </label>
-                <label class="optionCheckbox">
-                    <input type="checkbox" name="categorias" value="vidaSana" class="text">Vida sana
-                </label>
-            </div>
-            <div class="formDiv">
-                <label>Foto de usuario</label>
-                <input type="file" name="fotoDeUsuario" class="file" >
-            </div>
-            <div class="formDiv">
                 <!-- <label>Contraseña</label> -->
                 <input type="password" name="contraseña" class="formInput" placeholder="Contraseña" required>
             </div>
-            <div class="formDiv">
-                <!-- <label>Confirmar contraseña</label> -->
-                <input type="password" name="contraseña" class="formInput" placeholder="Confirmar contraseña" required>
-            </div>
             <div class="formDivButton">
                 <button type="submit" name="enviar" class="formButton">Enviar</button>
-                <button type="reset" name="borrar" class="formButton">Borrar</button>
             </div>
         </form>    
     </main>    
