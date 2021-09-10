@@ -33,10 +33,15 @@ section.banner img{
 .price{
     font-size: 18px;
     font-weight: bold;
+    width: 30%;
+    display: inline;
 }
 
 .discount {
     font-size: 16px;
+    width: 70%;
+    padding-bottom: 5%;
+    display: inline;
 }
 
 .description {
@@ -107,15 +112,6 @@ article div.mainArticle .truck{
     color: var(--verde);
 }
 
-.price{
-    width: 30%;
-}
-
-.discount{
-    width: 69%;
-    padding-bottom: 5%;
-}
-
 .price, .discount, .description{
     margin-left: 4%;
     margin-bottom: 4%;
@@ -123,7 +119,8 @@ article div.mainArticle .truck{
 
 .priceDiscount{
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 @media (min-width: 361px){

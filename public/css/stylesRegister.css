@@ -72,9 +72,9 @@ label {
     border: none;
     background-color: var(--celeste);
     color: #ffffff;
-    padding: 2%;
     border-radius: 6px;
     font-size: 1em;
+    padding: 1vh 1vw;
 }
 
 .text{
