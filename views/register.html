@@ -15,7 +15,7 @@
 <body>
     <header class="mainHeader">
         <div class="mainHeaderTopBar">
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" class="logo"></a>
             <div class="searchBar">
                 <input class="searchText" type="text" placeholder="Buscar productos, marcas y más">
                 <div class="searchButton"><i class="fas fa-search"></i></div>
@@ -47,11 +47,11 @@
             <h2>Registrate</h2>
             <div class="formDiv">
                 <!-- <label>Nombre y Apellido</label> -->
-                <input type="text" name="nombre" class="formInput" placeholder="Nombre y Apellido" required>
+                <input type="text" name="nombre" class="formInput" placeholder="Nombre y Apellido" required minlength="5">
             </div>
             <div class="formDiv">
                 <!-- <label>Nombre de usuario</label> -->
-                <input type="text" name="nombreDeUsuario" class="formInput" placeholder="Nombre de usuario" required>
+                <input type="text" name="nombreDeUsuario" class="formInput" placeholder="Nombre de usuario" required minlength="5">
             </div>
             <div class="formDiv">
                 <label>Fecha de nacimiento</label>
@@ -90,15 +90,17 @@
             </div>
             <div class="formDiv">
                 <label>Foto de usuario</label>
-                <input type="file" name="fotoDeUsuario" class="file" >
+                <div class="profilePicture">
+                    <input type="file" name="fotoDeUsuario" class="file" >
+                </div>
             </div>
             <div class="formDiv">
                 <!-- <label>Contraseña</label> -->
-                <input type="password" name="contraseña" class="formInput" placeholder="Contraseña" required>
+                <input type="password" name="contraseña" class="formInput" placeholder="Contraseña" required minlength="5">
             </div>
             <div class="formDiv">
                 <!-- <label>Confirmar contraseña</label> -->
-                <input type="password" name="contraseña" class="formInput" placeholder="Confirmar contraseña" required>
+                <input type="password" name="contraseña" class="formInput" placeholder="Confirmar contraseña" required minlength="5">
             </div>
             <div class="formDivButton">
                 <button type="submit" name="enviar" class="formButton">Enviar</button>

@@ -56,6 +56,10 @@ label {
     font-weight: normal;
 }
 
+.optionCheckbox input{
+    width: 10%;
+}
+
 
 .formInput{
     width: 100%;
@@ -77,8 +81,11 @@ label {
     margin-left: 2%;
 }
 
+.profilePicture{
+    display: flex;
+}
+
 .file{
-    width: 100%;
     background-color: var(--grisOscuro);
     color: #ffffff;
     border: none;

@@ -40,6 +40,7 @@
     text-align: center;
     margin: 0;
     font-size: 1em;
+    padding-top: 3vh;
 }
 
 .burgerButton {
@@ -88,6 +89,7 @@
     .copyHeader {
         max-width: 45vw;
         text-align: end;
+        padding-top: 0;
     }
 
     .burgerButton{

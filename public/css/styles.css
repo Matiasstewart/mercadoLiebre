@@ -47,6 +47,10 @@ section.banner img{
     margin-top: 20px;
 }
 
+article .description{
+    display: none;
+}
+
 main{
     width: 90%;
     margin: 0 auto;
@@ -55,7 +59,6 @@ main{
 main section article{
     background-color: white;
     margin: 10px 0px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main section article img{
@@ -83,13 +86,18 @@ main section article i,
     position: absolute;
     right: 20px;
     top: -15px;
-    }
+    transition: all 500ms;
+}
+
+.mainArticle i:hover{
+    transform: rotate(-90deg);
+}    
 
 main section h3{
     margin: 20px 0px;
 }
 
-article div.mainArticle div{
+article div.mainArticle .truck{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
@@ -97,11 +105,6 @@ article div.mainArticle div{
 
 .discount{
     color: var(--verde);
-}
-
-.price,
-.discount{
-    display: flex;
 }
 
 .price{
@@ -116,6 +119,11 @@ article div.mainArticle div{
 .price, .discount, .description{
     margin-left: 4%;
     margin-bottom: 4%;
+}
+
+.priceDiscount{
+    width: 100%;
+    display: flex;
 }
 
 @media (min-width: 361px){
@@ -136,6 +144,12 @@ article div.mainArticle div{
   
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 500ms;
+    }
+
+    main section article:hover{
+        width: 52%;
+        height: 52%;
     }
 }
 
@@ -160,6 +174,12 @@ article div.mainArticle div{
 
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 500ms;
+    }
+
+    main section article:hover{
+        width: 25%;
+        height: 25%;
     }
 }
 
