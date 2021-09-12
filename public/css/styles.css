@@ -50,10 +50,12 @@ section.banner img{
     font-weight: normal;
     display: none;
     margin-top: 20px;
+    transition: all 500ms;
+    padding-bottom: 1vh;
 }
 
-article .description{
-    display: none;
+article:hover .description{
+    display: block;
 }
 
 main{
@@ -119,13 +121,19 @@ article div.mainArticle .truck{
 
 .priceDiscount{
     width: 100%;
+    padding-bottom: 2vh;
     /* display: flex; */
     /* justify-content: space-between; */
 }
 
 @media (min-width: 361px){
     main section article .description{
-        display: block;
+        display: none;
+        transition: all 5s;
+    }
+ 
+    main section article:hover .description{
+         display: block;
     }
 
     .products{
@@ -152,6 +160,11 @@ article div.mainArticle .truck{
 
 @media (min-width: 769px){
     main section article .description{
+       display: none;
+       transition: all 5s;
+    }
+
+    main section article:hover .description{
         display: block;
     }
 
@@ -178,5 +191,6 @@ article div.mainArticle .truck{
         width: 25%;
         height: 25%;
     }
+
 }
 
