@@ -110,6 +110,10 @@
     .mainNavBar li {
         margin: 0 8px;
     }
+
+    .rightNavBar li a i {
+        padding-left: 3px;
+    }
 }
 
 @media (min-width: 1200px){

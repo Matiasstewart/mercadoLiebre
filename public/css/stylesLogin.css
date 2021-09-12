@@ -75,6 +75,21 @@ label {
     font-size: 1em;
 }
 
+.formButton:hover{
+    background-color: #0022AA;
+}
+
+.password{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.password a{
+    text-decoration: none;
+    color: var(--grisOscuro);
+}
+
 .text{
     margin-left: 2%;
 }

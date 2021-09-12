@@ -9,9 +9,39 @@
 }
 
 footer{
-    background-color: var(--grisClaro);
+    background-color: #ffffff;
+    padding: 1% 2%;
+    margin-top: 3%;
 }
 
-.footerSection .copyright{
-    
+.copyright{
+    color: var(--grisOscuro);  
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 0%;
+    padding-left: 1.5%;
+    text-align: start;
+}
+
+.footerFlex{
+    padding: 2%;
+}
+
+@media (min-width: 769px){
+    .footerFlex {
+        display: flex;
+        padding: 2%;
+    }
+
+    /* .copyright{
+        width: 100%;
+        background-color: #ffffff;
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 1.5%;
+        text-align: start;
+    } */
 }
