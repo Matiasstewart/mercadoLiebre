@@ -56,6 +56,8 @@ label {
 
 
 .optionCheckbox {
+    margin-left: -5%;           
+    padding-top: 1vh;
     margin-bottom: 1vh;
     display: block;
     font-weight: normal;
