@@ -50,6 +50,11 @@ label {
     font-weight: normal;
 }
 
+.option input{
+    margin: 10px;
+}
+
+
 .optionCheckbox {
     margin-bottom: 1vh;
     display: block;
@@ -78,7 +83,7 @@ label {
 }
 
 .text{
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .profilePicture{
@@ -86,6 +91,7 @@ label {
 }
 
 .file{
+    height: 100%;    
     background-color: var(--grisOscuro);
     color: #ffffff;
     border: none;
