@@ -38,7 +38,8 @@
 }
 
 .searchBar {
-    width: 50%;
+    display: flex;
+    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -56,6 +57,7 @@
 .searchButton {
     border: none;
     color: black;
+    background-color: var(--grisClaro);
     width: 9%;
     height: 100%;
     justify-content: center;
@@ -102,10 +104,10 @@
 }
 
 @media (min-width: 361px){
-.searchBar {
+/* .searchBar {
     display: inline-block;
     margin: auto;
-}
+} */
 
 }
 
@@ -123,6 +125,7 @@
     .searchBar{
         display: flex;
         max-width: 49%;
+        margin-right: 15%;
     }
 
     .searchLogo{
