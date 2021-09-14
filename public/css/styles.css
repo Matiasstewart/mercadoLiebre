@@ -96,8 +96,8 @@ main section article i,
     transition: all 500ms;
 }
 
-.mainArticle i:hover{
-    transform: rotate(-90deg);
+article:hover i{
+    transform: rotate(-90deg) !important;
 }    
 
 main section h3{

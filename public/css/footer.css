@@ -6,6 +6,11 @@
     color: var(--celeste);
     font-size: 2em;
     padding-bottom: 10px;
+    transition: all 300ms;
+}
+
+.footerIcon:hover {
+    color: #1E104E;
 }
 
 footer{
